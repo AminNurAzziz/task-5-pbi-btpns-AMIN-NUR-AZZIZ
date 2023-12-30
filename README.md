@@ -22,7 +22,7 @@ This is a simple REST API created as part of the VIX Full Stack Developer final 
 Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/AminNurAzziz/task-5-pbi-btpns-amin-nur-azziz.git
+git clone https://github.com/AminNurAzziz/task-5-pbi-btpns-AMIN-NUR-AZZIZ.git
 ```
 
 Change into the project directory:
@@ -38,6 +38,7 @@ go get .
 ```
 
 Create a .env file and add your database configuration:
+- **APP_PORT**: Port to be used by your application (eg: `8080`).
 - **DB_HOST**: Your host base data (eg: `localhost` or IP address).
 - **DB_PORT**: The port used by your database (eg: `5432` for PostgeSQL).
 - **DB_USER**: Your base data username.
@@ -51,6 +52,7 @@ Make sure to populate these values with information appropriate to your developm
 Example `.env`:
 
 ```env
+APP_PORT=8080
 DB_HOST=localhost
 DB_PORT=5407
 DB_USER=postgres

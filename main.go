@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"project/HINTTASK5/database"
 	"project/HINTTASK5/router"
+	"project/HINTTASK5/config"
 )
 
 func main() {
@@ -16,6 +17,8 @@ func main() {
 	fmt.Println("Connected to the database successfully")
 
 	r := router.SetupRouter()
-
-	r.Run(":8080")
+	
+	// Get the application port from the config package
+	appPort := config.GetAppPort()
+	r.Run(":" + appPort)
 }

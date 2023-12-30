@@ -10,7 +10,7 @@ func SetupPhotoRoutes(router *gin.Engine) {
 	photoGroup := router.Group("/photo").Use(middlewares.AuthMiddleware())
 	{
 		photoGroup.POST("/create", controllers.CreatePhoto)
-		photoGroup.GET("/get", controllers.GetPhotos)
+		photoGroup.GET("/", controllers.GetPhotos)
 
 		// Apply CheckPhotoOwnership middleware for update and delete routes
 		photoGroup.PUT("/:id", middlewares.CheckPhotoOwnership(), controllers.UpdatePhoto)

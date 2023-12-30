@@ -7,6 +7,7 @@ import (
 )
 
 var jwtSecret string
+var appPort string
 
 func init() {
 	err := godotenv.Load()
@@ -15,8 +16,13 @@ func init() {
 	}
 
 	jwtSecret = os.Getenv("JWT_SECRET")
+	appPort = os.Getenv("APP_PORT")
 }
 
 func GetJWTSecret() string {
 	return jwtSecret
+}
+
+func GetAppPort() string {
+	return appPort
 }

@@ -28,7 +28,7 @@ git clone https://github.com/AminNurAzziz/task-5-pbi-btpns-AMIN-NUR-AZZIZ.git
 Change into the project directory:
 
 ```bash
-cd task-5-pbi-btpns
+cd task-5-pbi-btpns-AMIN-NUR-AZZIZ
 ```
 
 Install the necessary dependencies:
